@@ -4,7 +4,7 @@
   "description": "ola si",
   "main": "index.js",
   "scripts": {
-    
+    "saludar": "node ejercicio-02.js"
   },
   "author": "jose orlando ospina",
   "license": "MIT",
