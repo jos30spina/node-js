@@ -13,5 +13,25 @@ $ npm run saludar "Fabian Gomez"
 Hola Fabian Gomez
 Estamos en desarrollo
 Adios el proceso ha terminado!
+
+
 */
 
+// Obtener el argumento de línea de comandos
+const nombre = process.argv[2];
+
+// Mostrar el mensaje de saludo
+console.log(`Hola ${nombre}`);
+
+// Obtener el valor de la variable de entorno NODE_ENV
+const nodeEnv = process.env.NODE_ENV;
+
+// Mostrar el mensaje según el valor de NODE_ENV
+if (nodeEnv === "development") {
+  console.log("Estamos en desarrollo");
+} else if (nodeEnv === "production") {
+  console.log("Estamos en producción");
+}
+
+// Mostrar el mensaje de despedida
+console.log("Adios el proceso ha terminado!");
